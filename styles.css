@@ -1,0 +1,209 @@
+:root{
+  --ink:#1A2332;
+  --paper:#FAF7F0;
+  --brick:#A8553D;
+  --slate:#4A5D70;
+  --gold:#C9A94F;
+  --paper-dim:#F1ECDF;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{ background:var(--gold); color:var(--ink); }
+
+a{ color:var(--brick); text-decoration:none; border-bottom:1px solid rgba(168,85,61,0.35); }
+a:hover{ border-bottom-color: var(--brick); }
+a:focus-visible, button:focus-visible{ outline:2px solid var(--brick); outline-offset:3px; }
+
+.mono{ font-family:'IBM Plex Mono',monospace; }
+
+/* ---- Top nav ---- */
+header.site{
+  position:sticky; top:0; z-index:10;
+  background:rgba(250,247,240,0.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid rgba(26,35,50,0.1);
+}
+.nav-inner{
+  max-width:760px; margin:0 auto; padding:18px 24px;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:16px; flex-wrap:wrap;
+}
+.nav-name{
+  font-family:'Source Serif 4', serif; font-weight:600; font-size:1.05rem;
+  color:var(--ink); letter-spacing:0.01em;
+}
+.nav-name a{ border:none; color:var(--ink); }
+nav.links{ display:flex; gap:22px; flex-wrap:wrap; }
+nav.links a{
+  font-size:0.82rem; text-transform:uppercase; letter-spacing:0.09em;
+  color:var(--slate); border:none; font-weight:500;
+}
+nav.links a.current, nav.links a:hover{ color:var(--brick); }
+
+/* ---- Hero (home page) ---- */
+.hero{
+  max-width:760px; margin:0 auto; padding:64px 24px 40px;
+}
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:'IBM Plex Mono',monospace; font-size:0.78rem;
+  letter-spacing:0.06em; color:var(--slate);
+  margin-bottom:22px;
+}
+.eyebrow::before{
+  content:""; width:22px; height:1px; background:var(--gold);
+}
+h1{
+  font-family:'Source Serif 4', serif;
+  font-weight:500;
+  font-size:2.5rem;
+  line-height:1.18;
+  margin:0 0 6px;
+  color:var(--ink);
+  letter-spacing:-0.01em;
+}
+h1 em{ font-style:italic; color:var(--brick); font-weight:400; }
+.role{
+  font-size:1.05rem; color:var(--slate); margin:0 0 32px; max-width:56ch;
+}
+.hero-photo-row{
+  display:flex; gap:28px; align-items:flex-start; margin-top:8px;
+}
+.hero-photo{
+  width:132px; height:132px; flex:none;
+  background:var(--paper-dim);
+  border:1px solid rgba(26,35,50,0.12);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono',monospace; font-size:0.7rem; color:var(--slate);
+  text-align:center; padding:10px;
+  object-fit:cover;
+}
+img.hero-photo{ padding:0; }
+.bio p{ margin:0 0 14px; color:var(--ink); }
+.bio p:last-child{ margin-bottom:0; }
+
+/* ---- Page header (non-home pages) ---- */
+.page-head{
+  max-width:760px; margin:0 auto; padding:56px 24px 8px;
+}
+.page-head .eyebrow{ margin-bottom:16px; }
+.page-head h1{ font-size:2rem; margin-bottom:14px; }
+.page-head .intro{ color:var(--slate); max-width:60ch; margin:0; }
+
+/* ---- field tag ---- */
+.tag{
+  display:inline-block;
+  font-family:'IBM Plex Mono',monospace;
+  font-size:0.72rem;
+  color:var(--slate);
+  background:transparent;
+  border:1px solid rgba(74,93,112,0.35);
+  padding:2px 8px;
+  border-radius:2px;
+  letter-spacing:0.02em;
+  white-space:nowrap;
+}
+
+/* ---- section divider ---- */
+.section{
+  max-width:760px; margin:0 auto; padding:8px 24px 56px;
+}
+.section-head{
+  display:flex; align-items:baseline; gap:14px;
+  margin:56px 0 26px;
+  border-top:1px solid var(--gold);
+  padding-top:14px;
+}
+.section:first-of-type .section-head:first-child{ margin-top:16px; }
+.section-head .num{
+  font-family:'IBM Plex Mono',monospace; font-size:0.75rem; color:var(--gold);
+}
+.section-head h2{
+  font-family:'Source Serif 4', serif; font-weight:500;
+  font-size:1.5rem; margin:0; color:var(--ink);
+}
+.section-note{
+  font-size:0.9rem; color:var(--slate); margin:-14px 0 20px;
+}
+
+/* ---- entries (research / teaching / awards) ---- */
+.entry{
+  display:grid;
+  grid-template-columns: 130px 1fr;
+  gap:20px;
+  padding:18px 0;
+  border-bottom:1px solid rgba(26,35,50,0.08);
+}
+.entry:last-child{ border-bottom:none; }
+.entry .tag{ margin-top:3px; justify-self:start; }
+.entry-title{
+  font-family:'Source Serif 4', serif;
+  font-weight:500;
+  font-size:1.08rem;
+  margin:0 0 4px;
+  color:var(--ink);
+}
+.entry-meta{ font-size:0.85rem; color:var(--slate); margin:0 0 8px; }
+.entry-desc{ font-size:0.94rem; color:var(--ink); margin:0; opacity:0.88; }
+.entry-links{ margin-top:8px; font-size:0.85rem; }
+.entry-links a{ margin-right:14px; }
+
+/* ---- simple list rows (awards, presentations) ---- */
+.row-list{ list-style:none; margin:0; padding:0; }
+.row-list li{
+  display:grid; grid-template-columns:120px 1fr;
+  gap:20px; padding:12px 0;
+  border-bottom:1px solid rgba(26,35,50,0.08);
+  font-size:0.95rem;
+}
+.row-list li:last-child{ border-bottom:none; }
+.row-list .tag{ align-self:start; }
+
+/* ---- CV download box ---- */
+.cv-box{
+  border:1px solid rgba(26,35,50,0.15);
+  background:var(--paper-dim);
+  padding:28px;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:20px; flex-wrap:wrap;
+}
+.cv-box .label{
+  font-family:'Source Serif 4', serif; font-size:1.15rem; margin:0 0 4px;
+}
+.cv-box .sub{ font-size:0.85rem; color:var(--slate); margin:0; }
+.btn{
+  display:inline-block; border:1px solid var(--ink); border-bottom:1px solid var(--ink);
+  padding:10px 20px; font-family:'IBM Plex Mono',monospace; font-size:0.82rem;
+  color:var(--ink); letter-spacing:0.03em;
+}
+.btn:hover{ background:var(--ink); color:var(--paper); }
+
+/* ---- contact ---- */
+.contact-grid{ display:flex; flex-direction:column; gap:14px; max-width:50ch; }
+.contact-row{ display:flex; gap:14px; align-items:baseline; }
+.contact-row .k{ font-family:'IBM Plex Mono',monospace; font-size:0.78rem; color:var(--slate); width:90px; flex:none; }
+
+@media (max-width:560px){
+  .entry, .row-list li{ grid-template-columns:1fr; }
+  .entry .tag, .row-list .tag{ margin-bottom:4px; }
+  h1{ font-size:2rem; }
+  .hero-photo-row{ flex-direction:column; }
+  .contact-row .k{ width:auto; }
+}
+
+footer{
+  max-width:760px; margin:0 auto; padding:40px 24px 80px;
+  border-top:1px solid rgba(26,35,50,0.1);
+  font-size:0.88rem; color:var(--slate);
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+}
+footer a{ color:var(--slate); border-bottom:1px solid rgba(74,93,112,0.3); }
