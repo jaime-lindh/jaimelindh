@@ -64,7 +64,8 @@ h2.first{ margin-top:8px; }
 
 .updated{ color:var(--muted); font-size:0.85rem; margin-top:50px; }
 
-@media (max-width:560px){
+@media (max-width:600px){
+  .bio p{ text-align: justify; }
   .profile-grid{ flex-direction:column; }
   .sidebar{ width:100%; }
   .sidebar .photo{ width:150px; height:175px; }
