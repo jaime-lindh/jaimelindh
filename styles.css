@@ -46,7 +46,7 @@ h1{ font-size:1.7rem; font-weight:bold; margin:0 0 22px; }
 .main-col{ flex:1; min-width:0; }
 
 .bio{ overflow:auto; }
-.bio p{ margin:0 0 14px; }
+.bio p{ margin:0 0 14px; text-align: justify; }
 
 .meta{ color:var(--muted); font-size:0.9rem; margin:0 0 26px; }
 
