@@ -59,7 +59,8 @@ h2.first{ margin-top:8px; }
 .page-sub{ color:var(--muted); font-size:0.98rem; margin:0 0 34px; }
 
 .item{ margin:0 0 16px; }
-.item .meta{ color:var(--muted); font-size:0.95rem; margin:0; }
+.item .meta{ color:var(--muted); font-size:0.95rem; margin:0 0 4px; }
+.item .meta:last-child{ margin-bottom:0; }
 
 .contact-block p{ margin:0 0 10px; }
 .contact-block .k{ color:var(--muted); display:inline-block; width:200px; }
