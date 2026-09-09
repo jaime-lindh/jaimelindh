@@ -21,7 +21,7 @@ a:hover{ text-decoration:underline; }
 header.site{ }
 .nav-inner{
   max-width:900px; margin:0 auto; padding:22px 24px 18px;
-  display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;
+  display:flex; justify-content:flex-end; align-items:baseline; flex-wrap:wrap; gap:8px;
   border-bottom:1px solid var(--border);
 }
 .nav-name{ font-weight:bold; font-size:1.15rem; color:var(--text); }
