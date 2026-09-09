@@ -35,14 +35,14 @@ nav.links a.current{ color:var(--link); }
 h1{ font-size:1.7rem; font-weight:bold; margin:0 0 22px; }
 
 .profile-grid{ display:flex; gap:36px; align-items:flex-start; }
-.sidebar{ width:200px; flex:none; }
+.sidebar{ width:240px; flex:none; }
 .sidebar .photo{
-  width:200px; height:230px; border-radius:2px;
+  width:240px; height:230px; border-radius:2px;
   background:#eee; object-fit:cover; display:block; margin:0 0 18px;
 }
-.sidebar-links{ font-size:0.92rem; }
+.sidebar-links{ font-size:0.82rem; }
 .affiliation{ margin:0 0 16px; }
-.affiliation p{ margin:0 0 2px; font-size:0.92rem; line-height:1.35; }
+.affiliation p{ margin:0 0 2px; font-size:0.82rem; line-height:1.35; }
 .affiliation p:last-child{ margin-bottom:0; }
 
 .main-col{ flex:1; min-width:0; }
