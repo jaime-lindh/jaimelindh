@@ -55,6 +55,8 @@ h2.first{ margin-top:8px; }
 .item{ margin:0 0 16px; }
 .item .meta{ color:var(--muted); font-size:0.95rem; margin:0; }
 
+.page-teaching .item .title{ font-weight:bold; }
+
 .contact-block p{ margin:0 0 10px; }
 .contact-block .k{ color:var(--muted); display:inline-block; width:150px; }
 
