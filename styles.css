@@ -34,7 +34,7 @@ nav.links a.current{ color:var(--link); }
 h1{ font-size:1.7rem; font-weight:bold; margin:0 0 18px; }
 
 .bio{ overflow:auto; }
-.bio p{ margin:0 0 14px; }
+.bio p{ margin:0 0 14px; text-align: justify;}
 
 .photo{
   width:150px; float:left; margin:0 24px 20px 0; border-radius:2px;
