@@ -34,21 +34,17 @@ nav.links a.current{ color:var(--link); }
 
 h1{ font-size:1.7rem; font-weight:bold; margin:0 0 22px; }
 
-.profile-grid{ display:flex; gap:36px; align-items:flex-start; }
-.sidebar{ width:170px; flex:none; }
-.sidebar .photo{
-  width:170px; height:195px; border-radius:2px;
+.photo{
+  width:200px; height:230px; border-radius:2px;
   background:#eee; object-fit:cover; display:block; margin:0 0 18px;
 }
-.sidebar-links{ display:flex; flex-direction:column; gap:8px; font-size:0.92rem; }
-.sidebar-links .contact-text{ color:var(--text); }
 
-.main-col{ flex:1; min-width:0; }
+.contact-line{ margin:0 0 26px; font-size:0.98rem; }
+.contact-line .contact-text{ color:var(--text); }
 
 .bio{ overflow:auto; }
 .bio p{ margin:0 0 14px; }
 
-.contact-line{ margin:22px 0 26px; font-size:0.98rem; clear:both; }
 .meta{ color:var(--muted); font-size:0.9rem; margin:0 0 26px; }
 
 h2{ font-size:1.05rem; font-weight:bold; margin:38px 0 14px; clear:both; }
@@ -66,8 +62,6 @@ h2.first{ margin-top:8px; }
 .updated{ color:var(--muted); font-size:0.85rem; margin-top:50px; }
 
 @media (max-width:560px){
-  .profile-grid{ flex-direction:column; }
-  .sidebar{ width:100%; }
-  .sidebar .photo{ width:140px; height:160px; }
+  .photo{ width:150px; height:175px; }
   .nav-inner{ flex-direction:column; align-items:flex-start; }
 }
