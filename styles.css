@@ -80,4 +80,5 @@ h2.first{ margin-top:8px; }
   .affiliation{ width:280px; margin:0 auto 16px auto; text-align:left; }
   .sidebar-links{ width:280px; margin:0 auto; text-align:left; }
   .nav-inner{ flex-direction:column; align-items:flex-start; }
+  .contact-block .k{ display:block; width:auto; margin-bottom:2px; }
 }
