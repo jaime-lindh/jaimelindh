@@ -41,7 +41,7 @@ nav.links a.current{ color:var(--link); }
 h1{ font-size:1.7rem; font-weight:bold; margin:0 0 22px; }
 
 .profile-grid{ display:flex; gap:36px; align-items:flex-start; }
-.sidebar{ width:200px; flex:none; }
+.sidebar{ width:270px; flex:none; }
 .sidebar .photo{
   width:250px; height:280px; border-radius:2px;
   background:#eee; object-fit:cover; display:block; margin:0 0 18px;
